@@ -437,6 +437,148 @@
         animation-duration: 0.01ms !important;
       }
     }
+    
+/* ===== PORTFOLIO DESIGN UPGRADE ===== */
+
+/* Bigger and more readable text */
+body {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+nav a {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 1.55rem;
+}
+
+.hero-text .eyebrow {
+  font-size: 0.95rem;
+  letter-spacing: 4px;
+}
+
+.hero-text h1 {
+  font-size: clamp(3.8rem, 8vw, 6.2rem);
+  line-height: 1.12;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+}
+
+.little-note {
+  font-size: 1rem;
+}
+
+.section-heading span {
+  font-size: 0.95rem;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+}
+
+.about-card p {
+  font-size: 1.15rem;
+  line-height: 2;
+}
+
+.skill {
+  font-size: 1.05rem;
+  padding: 12px 23px;
+}
+
+.project-card {
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+}
+
+.project-card p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.project-link {
+  font-size: 1rem;
+}
+
+.contact-card h3 {
+  font-size: 1.6rem;
+}
+
+.contact-card p {
+  font-size: 1.1rem;
+}
+
+/* Softer camera shadow */
+.camera {
+  box-shadow: 0 20px 45px rgba(180, 112, 148, 0.25);
+}
+
+/* Cute hover effect for cards */
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "✧";
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  color: var(--pink);
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: 0 20px 40px rgba(180, 112, 148, 0.2);
+}
+
+/* Smooth appearance animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Better mobile text sizing */
+@media (max-width: 750px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(3.2rem, 12vw, 4.5rem);
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .section-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.35rem;
+  }
+}
+
   </style>
 </head>
 
