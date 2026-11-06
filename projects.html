@@ -1,17 +1,134 @@
+
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Prashna Rai's lavender digital camera portfolio"><title>Projects | Prashna Rai</title><link rel="stylesheet" href="style.css"></head>
-<body><div class="camera-shell"><header class="camera-top"><span class="brand">PR ✦ DIGITAL</span><span>5.0 MP · LCD</span><span class="lens-dot"></span></header>
-<main class="camera-screen"><div class="screen-bar"><span><span class="rec-dot">●</span> REC — PROJECTS</span><span>♥ <span id="battery">100%</span> BATTERY</span></div>
-<nav class="nav"><a class="" href="index.html">HOME</a><a class="" href="about.html">ABOUT</a><a class="" href="skills.html">SKILLS</a><a class="active" href="projects.html">PROJECTS</a><a class="" href="contact.html">CONTACT</a></nav>
-<div class="page-wrap"><div class="section-head reveal"><span class="eyebrow">PHOTO ALBUM · IMG_0004</span><h1>My Project Gallery ▣</h1><p>A collection of my university web programming work. Choose a category to browse my snapshots.</p></div>
-<div class="project-tools"><button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="javascript">JAVASCRIPT</button><button class="filter" data-filter="web">WEB DESIGN</button><button class="filter" data-filter="accessibility">ACCESSIBILITY</button><button class="filter" data-filter="team">TEAM PROJECTS</button></div>
-<div class="grid">
-<article class="card project-card reveal" data-category="javascript"><span class="project-id">IMG_001 · INTERACTIVE</span><div class="gallery-photo">🎛️</div><h3>JavaScript Tasks</h3><p data-description>Interactive counters, dark mode, to-do lists and JavaScript features.</p><div style="margin:12px 0"><span class="tag">JavaScript</span><span class="tag">DOM</span></div><button class="btn" data-details>PROJECT DETAILS</button><a class="tag" href="https://github.com/prqshna-design/WEB-PORGRAMMING/tree/main/WEB%20week4%20%28mon%29" target="_blank" rel="noopener">OPEN GITHUB ↗</a></article>
-<article class="card project-card reveal" data-category="javascript"><span class="project-id">IMG_002 · API</span><div class="gallery-photo">😂</div><h3>Random Joke Corner</h3><p data-description>A fun application using an API to display random jokes.</p><div style="margin:12px 0"><span class="tag">JavaScript</span><span class="tag">API</span></div><button class="btn" data-details>PROJECT DETAILS</button><a class="tag" href="https://github.com/prqshna-design/WEB-PORGRAMMING/tree/main/WEB%20week6%20%28mon%29" target="_blank" rel="noopener">OPEN GITHUB ↗</a></article>
-<article class="card project-card reveal" data-category="accessibility"><span class="project-id">IMG_003 · A11Y</span><div class="gallery-photo">♿</div><h3>Web Accessibility</h3><p data-description>Improving accessibility, keyboard navigation and website readability.</p><div style="margin:12px 0"><span class="tag">Accessibility</span><span class="tag">HTML</span></div><button class="btn" data-details>PROJECT DETAILS</button><a class="tag" href="https://github.com/prqshna-design/WEB-PORGRAMMING/tree/main/WEB%20week9%20%28fri%29" target="_blank" rel="noopener">OPEN GITHUB ↗</a></article>
-<article class="card project-card reveal" data-category="web"><span class="project-id">IMG_004 · PORTFOLIO</span><div class="gallery-photo">📸</div><h3>Digital Camera Portfolio</h3><p data-description>This lavender camera-themed portfolio, built with multiple pages and JavaScript interactions.</p><div style="margin:12px 0"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><button class="btn" data-details>PROJECT DETAILS</button></article>
-<article class="card project-card reveal" data-category="team"><span class="project-id">IMG_005 · TEAM PROJECT</span><div class="gallery-photo">🗺️</div><h3>SeoulMate — Seoul Day Planner</h3><p data-description>A collaborative three-person travel-planning website that helps visitors organize a day in Seoul, with recommendations for history, traditional culture, local food and shopping.</p><div style="margin:12px 0"><span class="tag">Team Project</span><span class="tag">Travel Planner</span><span class="tag">Web Development</span></div><button class="btn" data-details>PROJECT DETAILS</button><a class="tag" href="https://seoulmate-chi.vercel.app/en/login?next=%2Fen%2Fguide" target="_blank" rel="noopener">OPEN SEOULMATE ↗</a><a class="tag" href="https://github.com/sabhyatachhetri45-dev/seoul" target="_blank" rel="noopener">OPEN GITHUB ↗</a></article>
-</div></div></main>
-<div class="camera-bottom"><span>MADE WITH ♡ BY PRASHNA</span><button class="shutter" data-shutter aria-label="Take a camera snapshot"></button><span>PLAYBACK ▶</span></div>
-<footer>© <span data-year></span> Prashna Rai · Digital Portfolio</footer></div><div class="flash"></div><script src="script.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects | Prashna Rai</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="camera-shell">
+
+    <header class="camera-top">
+      <span>PRASHNA CAM ✦</span>
+      <span>5.0 MP · LCD</span>
+      <span>♡ DIGITAL PORTFOLIO</span>
+    </header>
+
+    <div class="screen-bar">
+      <span>MY PROJECT GALLERY</span>
+      <span>IMG_0004.JPG</span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="projects.html" class="active">PROJECTS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <section class="page-content">
+
+      <div class="section-head">
+        <span class="eyebrow">A COLLECTION OF MY WORK ♡</span>
+        <h1>My Projects</h1>
+        <p>Little things I've created while learning, experimenting and growing as a developer.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- PROJECT 1: SEOULMATE -->
+        <article class="card project-card">
+          <div class="project-image">
+            <span>🗺️</span>
+            <small>TEAM PROJECT · 01</small>
+          </div>
+          <span class="eyebrow">WEB DEVELOPMENT</span>
+          <h3>SeoulMate</h3>
+          <p>A collaborative travel-planning website that helps visitors plan a day in Seoul with culture, food, history and shopping.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a class="btn" href="https://seoulmate-chi.vercel.app/en/login?next=%2Fen%2Fguide" target="_blank" rel="noopener">VISIT WEBSITE ↗</a>
+        </article>
+
+        <!-- PROJECT 2: WEEK 6.1 -->
+        <article class="card project-card">
+          <div class="project-image">
+            <span>💻</span>
+            <small>COURSE PROJECT · 02</small>
+          </div>
+          <span class="eyebrow">WEB PROGRAMMING</span>
+          <h3>Week 6.1 Project</h3>
+          <p>A JavaScript practice project created as part of my web programming coursework.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a class="btn" href="https://github.com/prqshna-design/WEB-PORGRAMMING" target="_blank" rel="noopener">VIEW SOURCE ↗</a>
+        </article>
+
+        <!-- PROJECT 3: HW REGISTRATION -->
+        <article class="card project-card">
+          <div class="project-image">
+            <span>📝</span>
+            <small>COURSE PROJECT · 03</small>
+          </div>
+          <span class="eyebrow">WEB DEVELOPMENT</span>
+          <h3>HW Registration</h3>
+          <p>A registration-related web programming assignment created to practice website structure and interactive elements.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a class="btn" href="https://github.com/prqshna-design/WEB-PORGRAMMING" target="_blank" rel="noopener">VIEW SOURCE ↗</a>
+        </article>
+
+        <!-- PROJECT 4: RANDOM JOKE -->
+        <article class="card project-card">
+          <div class="project-image">
+            <span>😂</span>
+            <small>JAVASCRIPT PROJECT · 04</small>
+          </div>
+          <span class="eyebrow">API INTEGRATION</span>
+          <h3>Random Joke Corner</h3>
+          <p>A fun JavaScript project that uses an API to display random jokes and practices working with external data.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">API</span>
+            <span class="tag">CSS</span>
+          </div>
+          <a class="btn" href="https://github.com/prqshna-design/WEB-PORGRAMMING" target="_blank" rel="noopener">VIEW SOURCE ↗</a>
+        </article>
+
+      </div>
+
+      <!-- MAIN WEB PROGRAMMING REPOSITORY -->
+      <section class="card coursework-card">
+        <span class="eyebrow">MY LEARNING JOURNEY ♡</span>
+        <h2>Explore All My Coursework</h2>
+        <p>Want to see more? Visit my main Web Programming GitHub repository to explore my weekly assignments, practice exercises and development progress.</p>
+        <a class="btn" href="https://github.com/prqshna-design/WEB-PORGRAMMING" target="_blank" rel="noopener">VISIT MY GITHUB REPOSITORY ↗</a>
+      </section>
+
+    </section>
+
+    <footer class="camera-bottom">
+      <span>© 2026 PRASHNA RAI</span>
+      <span>MADE WITH ♡ AND CODE</span>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
