@@ -1,40 +1,409 @@
 
-<section class="section-head reveal" id="course-projects" style="margin-top:48px">
-  <span class="eyebrow">COURSE WORK · SELECTED SNAPSHOTS</span>
-  <h2>My Course Projects ▣</h2>
-  <p>Three projects from my university learning journey. Explore the actual working websites!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prashna Rai | Personal Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eee9fa;
+    color: #423454;
+    padding: 25px 15px;
+}
+
+.camera {
+    max-width: 1050px;
+    margin: auto;
+    background: #f9f6ff;
+    border: 5px solid #d2c4e8;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px #b6a6cf66;
+}
+
+.camera-top {
+    background: #d9c9ed;
+    padding: 16px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 1px solid #e8def4;
+}
+
+nav a {
+    text-decoration: none;
+    color: #735b91;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a477c5;
+}
+
+.hero {
+    padding: 65px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.intro {
+    max-width: 510px;
+}
+
+.eyebrow {
+    color: #9875b8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 58px);
+    color: #74548f;
+    margin: 15px 0;
+}
+
+.intro p {
+    line-height: 1.9;
+    color: #756a83;
+    margin-bottom: 20px;
+}
+
+.photo-frame {
+    background: white;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #9d83b833;
+    transform: rotate(3deg);
+    width: 260px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.photo-caption {
+    text-align: center;
+    padding: 12px 5px 5px;
+    font-size: 13px;
+    color: #806b98;
+}
+
+section.content {
+    padding: 35px;
+    border-top: 1px solid #e8def4;
+}
+
+h2 {
+    color: #74548f;
+    margin: 12px 0 20px;
+}
+
+.about-text {
+    line-height: 1.9;
+    color: #756a83;
+    max-width: 800px;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.skill, .project {
+    background: white;
+    border: 1px solid #e7dcf2;
+    border-radius: 18px;
+    padding: 23px;
+    box-shadow: 0 5px 15px #b7a4cc18;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill span {
+    font-size: 28px;
+}
+
+.skill h3, .project h3 {
+    color: #795a98;
+    margin: 12px 0;
+}
+
+.skill p, .project p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #82768f;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 18px;
+    background: #9270b0;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.project a:hover {
+    background: #74548f;
+}
+
+.contact {
+    text-align: center;
+    background: #eee7f8;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.contact a {
+    color: #765493;
+    font-weight: bold;
+}
+
+footer {
+    background: #d9c9ed;
+    padding: 20px;
+    text-align: center;
+    color: #725b8c;
+    font-size: 12px;
+}
+
+@media(max-width: 600px) {
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    section.content {
+        padding: 25px 18px;
+    }
+
+    .photo-frame {
+        width: 230px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="camera">
+
+<header class="camera-top">
+    <span>📷 PRASHNA CAM</span>
+    <span>5.0 MP · DIGITAL PORTFOLIO</span>
+    <span>♡ 2026</span>
+</header>
+
+<nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+    <div class="intro">
+        <span class="eyebrow">WELCOME TO MY LITTLE CORNER ♡</span>
+
+        <h1>Hi, I'm Prashna Rai!</h1>
+
+        <p>
+            I'm a Computer Engineering student at Gachon University,
+            South Korea. I enjoy learning programming, exploring
+            web development, and creating useful digital experiences.
+        </p>
+
+        <p>
+            This portfolio is a collection of my learning journey,
+            skills, and university projects.
+        </p>
+    </div>
+
+    <div class="photo-frame">
+        <img src="assets/profile.jpg"
+             alt="Portrait of Prashna Rai">
+        <div class="photo-caption">
+            ✨ A little snapshot of me!
+        </div>
+    </div>
+
 </section>
 
-<div class="grid">
+<!-- ABOUT -->
+<section class="content" id="about">
 
-  <article class="card reveal">
-    <span class="project-id">IMG_001</span>
-    <div class="icon">🗺️</div>
-    <h3>SeoulMate</h3>
-    <p>A team-built Seoul travel planner helping tourists explore Korean culture, food, history and shopping.</p>
-    <a class="btn" style="display:inline-block;margin-top:14px"
-       href="https://seoulmate-chi.vercel.app/en/login?next=%2Fen%2Fguide"
-       target="_blank" rel="noopener">VISIT WEBSITE ↗</a>
-  </article>
+    <span class="eyebrow">GET TO KNOW ME ♡</span>
+    <h2>About Me</h2>
 
-  <article class="card reveal">
-    <span class="project-id">IMG_002</span>
-    <div class="icon">😂</div>
-    <h3>Random Joke Corner</h3>
-    <p>A fun JavaScript application that fetches and displays random jokes using an API.</p>
-    <a class="btn" style="display:inline-block;margin-top:14px"
-       href="https://prqshna-design.github.io/WEB-PORGRAMMING/WEB%20week6%20%28mon%29/task1%28JOKE%29.html"
-       target="_blank" rel="noopener">TRY PROJECT ↗</a>
-  </article>
+    <p class="about-text">
+        My name is Prashna Rai, and I am currently studying
+        Computer Engineering at Gachon University in South Korea.
+        I am interested in programming, web design, and technology.
+        Through my coursework, I am developing my skills in
+        HTML, CSS, JavaScript, and problem-solving.
+        I enjoy learning new things and improving my projects
+        step by step. My goal is to become a better developer
+        by building practical and creative applications.
+    </p>
 
-  <article class="card reveal">
-    <span class="project-id">IMG_003</span>
-    <div class="icon">📝</div>
-    <h3>Student Registration</h3>
-    <p>A student registration webpage created to practice HTML forms and interactive web development.</p>
-    <a class="btn" style="display:inline-block;margin-top:14px"
-       href="https://prqshna-design.github.io/WEB-PORGRAMMING/WEB%20week8%20%28mon%29/student%20registration.html"
-       target="_blank" rel="noopener">TRY PROJECT ↗</a>
-  </article>
+</section>
 
-</div>
+<!-- SKILLS -->
+<section class="content" id="skills">
+
+    <span class="eyebrow">WHAT I'M LEARNING ♡</span>
+    <h2>My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">
+            <span>🌐</span>
+            <h3>HTML5</h3>
+            <p>Building webpage structures and forms.</p>
+        </div>
+
+        <div class="skill">
+            <span>🎨</span>
+            <h3>CSS3</h3>
+            <p>Creating layouts, designs and responsive pages.</p>
+        </div>
+
+        <div class="skill">
+            <span>⚡</span>
+            <h3>JavaScript</h3>
+            <p>Adding interactive features to websites.</p>
+        </div>
+
+        <div class="skill">
+            <span>💻</span>
+            <h3>Programming</h3>
+            <p>Learning programming logic and problem-solving.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="content" id="projects">
+
+    <span class="eyebrow">MY UNIVERSITY WORK ♡</span>
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
+
+        <article class="project">
+            <span>🗺️</span>
+            <h3>SeoulMate</h3>
+            <p>
+                A collaborative travel-planning website
+                that helps tourists explore Seoul.
+            </p>
+            <a href="https://seoulmate-chi.vercel.app/en/login?next=%2Fen%2Fguide"
+               target="_blank" rel="noopener">
+                VIEW PROJECT ↗
+            </a>
+        </article>
+
+        <article class="project">
+            <span>😂</span>
+            <h3>Random Joke Corner</h3>
+            <p>
+                A JavaScript application using an API
+                to fetch and display random jokes.
+            </p>
+            <a href="https://prqshna-design.github.io/WEB-PORGRAMMING/WEB%20week6%20%28mon%29/task1%28JOKE%29.html"
+               target="_blank" rel="noopener">
+                VIEW PROJECT ↗
+            </a>
+        </article>
+
+        <article class="project">
+            <span>📝</span>
+            <h3>Student Registration</h3>
+            <p>
+                A student registration webpage using
+                HTML forms, CSS and JavaScript.
+            </p>
+            <a href="https://prqshna-design.github.io/WEB-PORGRAMMING/WEB%20week8%20%28mon%29/student%20registration.html"
+               target="_blank" rel="noopener">
+                VIEW PROJECT ↗
+            </a>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="content" id="contact">
+
+    <div class="contact">
+        <span class="eyebrow">LET'S CONNECT ♡</span>
+        <h2>Thank You for Visiting!</h2>
+
+        <p>
+            I'm always interested in learning, creating,
+            and connecting with others.
+        </p>
+
+        <p style="margin-top:15px;">
+            <a href="https://github.com/prqshna-design"
+               target="_blank" rel="noopener">
+                VISIT MY GITHUB ↗
+            </a>
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Prashna Rai · Made with ♡ and code
+</footer>
+
+</main>
+
+</body>
+</html>
